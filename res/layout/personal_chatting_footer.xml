@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:layout_marginLeft="1.5dp"
+            android:background="@drawable/emotionstore_emo_bg"
+            android:focusableInTouchMode="true"
+            android:padding="2dp">
+
+        <Button
+                android:id="@+id/btn_keyboard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:background="@drawable/sl_btn_chatting_setmode_keyboard"
+                android:focusable="false"/>
+
+        <Button
+                android:id="@+id/btn_voice"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sl_btn_chatting_setmode_voice"
+                android:focusable="false"/>
+
+        <com.lenovo.market.view.CustomChatControls
+                android:id="@+id/customChatControls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_pressed_speek"
+                android:text="按住 说话"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/sl_voice_rcd_btn"
+                android:textSize="18sp"
+                android:minHeight="40.5dp"
+                android:maxHeight="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.lenovo.market.view.CustomViewPage
+            android:id="@+id/customViewPage"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:visibility="gone"/>
+
+</LinearLayout>

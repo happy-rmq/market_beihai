@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/hui"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <FrameLayout
+            android:id="@+id/frame_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <com.lenovo.market.view.PullDownView
+                android:id="@+id/lv_groupchat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="true"
+                android:scrollbarStyle="insideInset"
+                android:scrollingCache="false"/>
+
+        <RelativeLayout
+                android:id="@+id/groupchat_voice"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:background="@drawable/voice_rcd_hint_bg"
+                android:visibility="gone">
+
+            <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/voice_rcd_hint"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:id="@+id/groupchat_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include layout="@layout/personal_chatting_footer"/>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="top|right"
+              android:orientation="horizontal"
+              android:paddingTop="10dp"
+              android:paddingLeft="10dp"
+              tools:ignore="UseCompoundDrawables">
+
+    <TextView
+            android:id="@+id/businesscard_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/msg_state_fail_resend_pressed"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:id="@+id/businesscard_layout"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="名片"
+                android:textColor="@color/black"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+            <ImageView
+                    android:id="@+id/businesscard_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:id="@+id/businesscard_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/businesscard_img"
+                    android:singleLine="true"
+                    android:text="aa"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/businesscard_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/businesscard_name"
+                    android:layout_below="@+id/businesscard_name"
+                    android:singleLine="true"
+                    android:text="bb"
+                    android:textColor="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/businesscard_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon"
+            tools:ignore="ContentDescription"/>
+
+</LinearLayout>

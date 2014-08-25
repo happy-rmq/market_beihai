@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/hui"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <FrameLayout
+            android:id="@+id/llParent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <ListView
+                android:id="@+id/lvShow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#00000000"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:fadingEdge="none"
+                android:scrollingCache="false"
+                android:scrollbars="none"/>
+
+        <TextView
+                android:id="@+id/tvLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_contacts_toast"
+                android:gravity="center"
+                android:maxWidth="70dip"
+                android:minWidth="70dip"
+                android:padding="10dip"
+                android:textColor="@color/white"
+                android:textSize="50sp">
+        </TextView>
+
+        <com.lenovo.market.view.SideBarView
+                android:id="@+id/myView"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right">
+        </com.lenovo.market.view.SideBarView>
+    </FrameLayout>
+
+    <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/mmfooter_bg_gray"
+            android:visibility="gone">
+
+        <HorizontalScrollView
+                android:id="@+id/horizontal_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/btn">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                <LinearLayout
+                        android:id="@+id/footer_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_dot_avatar"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+                android:id="@+id/btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/sl_confirm_btn"
+                android:enabled="false"
+                android:text="确定(0)"
+                android:textColor="@color/chatsetting__confirmbtn_text_color"
+                android:textSize="12sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

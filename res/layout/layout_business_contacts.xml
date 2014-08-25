@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/hui"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp">
+
+            <LinearLayout
+                    android:id="@+id/ll_shortcut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"></LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/wallet_order_info_bottom_cell"/>
+
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#00000000"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:fadingEdge="none"
+            android:scrollingCache="false"
+            android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/contactitem_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_listitem_business_contacts"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="7dp"
+              android:paddingTop="7dp">
+
+    <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_department_member"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+        <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nick"
+                android:hint="@string/no_phone_number"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

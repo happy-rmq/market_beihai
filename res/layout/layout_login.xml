@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_login"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingLeft="50dp"
+              android:paddingRight="50dp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:src="@drawable/ic_loading_logo"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/app_name_zh"
+            android:textColor="@color/blue21"
+            android:textSize="20sp"/>
+
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/app_name_en"
+        android:textColor="@color/blue21"
+        android:textSize="16sp" /> -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_account"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+        <EditText
+                android:id="@+id/et_login_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/login_frame_selected"
+                android:hint="@string/login_account_hint"
+                android:paddingLeft="5dip"
+                android:selectAllOnFocus="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+        <EditText
+                android:id="@+id/et_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/login_frame_selected"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+        <Button
+                android:id="@+id/bt_login_go"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/sl_login_btn"
+                android:text="@string/login_logintbtn"
+                android:textSize="16sp"/>
+
+        <Button
+                android:id="@+id/bt_register_go"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sl_login_btn"
+                android:text="@string/login_registerbtn"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip">
+
+        <CheckBox
+                android:id="@+id/cb_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/sl_login_checkbox"
+                android:text="@string/login_checkbox"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

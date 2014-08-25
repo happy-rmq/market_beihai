@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_contacts_menu_dialog"
+            android:orientation="vertical">
+
+        <GridView
+                android:id="@+id/layout_share_gv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:listSelector="@color/transparent"
+                android:numColumns="3">
+        </GridView>
+
+        <Button
+                android:id="@+id/layout_share_cancel"
+                style="@style/contacts_menu_btn"
+                android:layout_margin="10dp"
+                android:background="@drawable/red_bt"
+                android:text="@string/title_back"
+                android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

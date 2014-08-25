@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/psd_color_focus" android:state_selected="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/psd_color4_normal" android:state_selected="false"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/psd_color4_normal"/>
+    <!-- default -->
+
+</selector>

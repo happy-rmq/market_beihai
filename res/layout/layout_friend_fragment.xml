@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/circle_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/net_error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:visibility="gone"
+            android:background="#f6ebe6">
+
+        <ImageView
+                android:id="@+id/error"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/network_unavailable"
+                android:src="@drawable/ic_error"/>
+
+        <TextView
+                style="@style/basic_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/error"
+                android:text="@string/network_unavailable"/>
+
+        <Button
+                android:id="@+id/btn_view_details"
+                style="@style/basic_text"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="@string/view_details"
+                android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/active_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:fastScrollEnabled="true"
+            android:divider="@null">
+    </ListView>
+
+</LinearLayout>

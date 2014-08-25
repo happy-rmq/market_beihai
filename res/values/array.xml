@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="string_array_picselect">
+        <item>@string/settings_take_picture</item>
+        <item>@string/settings_select_picture</item>
+    </string-array>
+    <string-array name="one_item_dialog">
+        <item>删除</item>
+    </string-array>
+    <string-array name="three_items_dialog">
+        <item>删除消息</item>
+        <item>复制消息</item>
+        <item>转发</item>
+    </string-array>
+    <string-array name="two_items_dialog">
+        <item>删除</item>
+        <item>转发</item>
+    </string-array>
+
+</resources>

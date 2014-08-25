@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="top|right"
+              android:orientation="horizontal"
+              android:paddingTop="10dp"
+              tools:ignore="UseCompoundDrawables">
+
+    <TextView
+            android:id="@+id/chatinfo_location_right_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/msg_state_fail_resend_pressed"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:visibility="gone"/>
+
+    <RelativeLayout
+            android:id="@+id/chatinfo_location_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:gravity="center_vertical|right">
+
+        <ImageView
+                android:layout_width="165dp"
+                android:layout_height="95dp"
+                android:background="@drawable/location_msg"/>
+
+        <TextView
+                android:id="@+id/chatinfo_location_right_content"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="@color/white"
+                android:maxLines="2"
+                android:gravity="center"
+                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/chatinfo_location_right_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon"
+            tools:ignore="ContentDescription"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/right_per_msg_center_id"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/psd_right_loginbg">
+
+    <!-- 顶部个人基本信息 -->
+
+    <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+        <ImageView
+                android:id="@+id/right_permsg_login_img_usericon"
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/psd_right_headportrait"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:id="@+id/right_permsg_login_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="未登录"
+                android:textColor="@color/whilte"
+                android:textSize="15sp"/>
+    </LinearLayout>
+
+    <GridView
+            android:id="@+id/right_permsg_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearlayout1"
+            android:verticalSpacing="20dp"
+            android:numColumns="3">
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+        <EditText
+                android:id="@+id/et_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_search_input"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/search"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/contacts_newfriends"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/contacts_single_item"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_contacts_newfriends"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/new_friends"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/newfriend_count"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/one_figure"
+                android:textColor="@color/white"
+                android:visibility="invisible"/>
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_message_list_division"/>
+
+    <LinearLayout
+            android:id="@+id/contacts_group_chat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/contacts_single_item"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_contacts_group_chat"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/contacts_groupChat"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_message_list_division"/>
+
+    <LinearLayout
+            android:id="@+id/contacts_marketing_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/contacts_single_item"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_contacts_marketing"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/public_account"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_message_list_division"/>
+
+    <LinearLayout
+            android:id="@+id/business_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/contacts_single_item"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_contacts_enterprise"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/business_contacts"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

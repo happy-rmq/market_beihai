@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_contacts_menu_dialog"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <!--
+        <Button
+            style="@style/contacts_menu_btn"
+            android:id="@+id/btn_send_card"
+            android:background="@drawable/btn_gray_menu"
+            android:text="@string/send_business_card" />
+
+        <Button
+            style="@style/contacts_menu_btn"
+            android:id="@+id/btn_remark_name"
+            android:background="@drawable/btn_gray_menu"
+            android:text="@string/remark_name" />
+
+        <Button
+            style="@style/contacts_menu_btn"
+            android:id="@+id/btn_blacklist"
+            android:background="@drawable/btn_gray_menu"
+            android:text="@string/join_the_blacklist" />
+        -->
+
+        <Button
+                android:id="@+id/btn_delete"
+                style="@style/contacts_menu_btn"
+                android:background="@drawable/red_bt"
+                android:text="@string/delete"
+                android:textColor="@color/white"/>
+
+        <Button
+                android:id="@+id/btn_cancel"
+                style="@style/contacts_menu_btn"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gray_bt"
+                android:text="@string/cancel"
+                android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/webview_title"
+            layout="@layout/psd_titlebar"/>
+
+    <WebView
+            android:id="@+id/webView"
+            android:layout_below="@+id/webview_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+            android:id="@+id/fragment_item_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/webview_title"
+            android:visibility="gone"
+            android:background="@drawable/psd_fragment_item_bg">
+
+        <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fragment_item_img"
+                android:layout_below="@+id/fragment_item_img"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/psd_fragment_item_hand"/>
+
+        <ImageView
+                android:id="@+id/fragment_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/psd_fragment_item_cercle"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:textSize="16dp"
+                android:text="网络不给力，请点击屏幕重新加载"/>
+    </RelativeLayout>
+
+</RelativeLayout>

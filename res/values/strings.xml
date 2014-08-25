@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MarketLenovoActivity!</string>
+    <string name="app_name">微门户</string>
+    <string name="app_name_zh">微门户</string>
+    <string name="app_name_en">vPortal</string>
+    <string name="lbs_before_minute">分钟前</string>
+    <string name="lbs_before_hour">小时前</string>
+    <string name="net_error">当前网络不可用，请先连接Internet！</string>
+    <string name="app_cancel">取消</string>
+
+    <string-array name="send_img_item">
+        <item>拍照</item>
+        <item>从手机相册选择</item>
+    </string-array>
+
+    <!-- 主页面 -->
+    <string name="active_menu_event">首页</string>
+    <string name="active_menu_friend">消息</string>
+    <string name="active_menu_contact">通讯录</string>
+    <string name="active_menu_square">广场</string>
+    <string name="active_menu_setting">我</string>
+    <string name="active_menu_chose_exhibition">展会列表</string>
+
+    <!-- 活动 -->
+    <string name="active_list_explain">进入</string>
+    <string name="active_detail_content_explain">活动内容：</string>
+    <string name="active_detail_rule_explain">活动规则：</string>
+    <string name="send">发送</string>
+    <string name="friend">好友</string>
+    <string name="circle_Friends">朋友圈</string>
+    <string name="sina">新浪</string>
+    <string name="QQ">QQ</string>
+    <string name="tiny">微信</string>
+    <string name="group">群组</string>
+
+    <!-- 参展商详细资料 -->
+    <string name="company_name">名称</string>
+    <string name="introduction">介绍</string>
+    <string name="no_introduction">暂无介绍</string>
+    <string name="view_location">查看位置</string>
+    <string name="view_message">查看消息</string>
+    <string name="receive_message">接受消息</string>
+    <string name="display_in_card">在我名片里显示</string>
+    <string name="with_focus_on">加关注</string>
+
+    <!-- 设置 -->
+    <string name="settings_info_text">个人信息</string>
+    <string name="settings_qr_code_card">二维码名片</string>
+    <string name="settings_manage_text">积分管理</string>
+    <string name="settings_theme_text">主题</string>
+    <string name="settings_update_text">版本升级</string>
+    <string name="settings_update_home">切换主页</string>
+    <string name="settings_introduce_text">新功能介绍</string>
+    <string name="settings_suggest_text">反馈建议</string>
+    <string name="settings_share_text">分享</string>
+    <string name="settings_about_text">关于</string>
+    <string name="settings_exit_text">退出</string>
+    <string name="settings_modifyname_hint">好名字可以让你的朋友更容易记住你。</string>
+    <string name="settings_modify_et_hint">自由风筝</string>
+    <string name="settings_take_picture">拍照</string>
+    <string name="settings_select_picture">选择本地图片</string>
+    <string name="settings_account">账号</string>
+    <string name="settings_name">名字</string>
+    <string name="settings_avatar">头像</string>
+    <string name="settings_sex">性别</string>
+    <string name="settings_female">女</string>
+    <string name="settings_male">男</string>
+    <string name="settings_area">地区</string>
+    <string name="phone_number">手机号码</string>
+    <string name="settings_area_hint">北京 海淀</string>
+    <string name="settings_sign">个性签名</string>
+    <string name="settings_email">电子邮箱</string>
+    <string name="settings_sign_hint">走累了，就回头看看……</string>
+    <string name="settings_attention">关注</string>
+    <string name="settings_attention_hint">不公开显示</string>
+    <string name="settings_btn_ok">确定</string>
+    <string name="settings_qrcode_help">扫一扫上面的二维码图案，加我好友</string>
+    <string name="not_filled">未填写</string>
+
+    <!-- 登录界面 -->
+    <string name="login_account">账号：</string>
+    <string name="password">密码：</string>
+    <string name="login_logintbtn">登录</string>
+    <string name="login_registerbtn">注册</string>
+    <string name="login_checkbox">记住账号</string>
+    <string name="login_account_hint">手机号/邮箱</string>
+    <string name="password_hint">6-15位</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+
+    <!-- 注册界面 -->
+    <string name="register_welcome">欢迎注册营销客户端</string>
+    <string name="register_select">您可以选择一下方式进行注册:</string>
+    <string name="register_message">手机注册</string>
+    <string name="register_message_introduce">使用手机号注册天天微生活</string>
+    <string name="register_email_introduce">使用任意邮箱注册天天微生活</string>
+    <string name="register_email">邮箱注册</string>
+    <string name="register_getcode">获取验证码</string>
+    <string name="register_nextstep">下一步</string>
+    <string name="register_phonenum_hint">请输入你的手机号</string>
+    <string name="register_submit">提交</string>
+    <string name="register_reenter_psdhint">请再输一遍密码</string>
+    <string name="register_reenter_psdtext">确认密码：</string>
+    <string name="email_hint">可使用任意邮箱</string>
+    <string name="email">邮箱：</string>
+    <string name="register_youraccount">您的账户是：+</string>
+    <string name="register_code">验证码：</string>
+    <string name="verification_code_hint">请查看手机短信中的验证码</string>
+    <string name="btn_guide_go2main">进入主界面</string>
+
+    <!-- titlebar文字 -->
+    <string name="title_modifyname">更改名字</string>
+    <string name="title_modifyroomname">群聊名称</string>
+    <string name="title_modifysign">个性签名</string>
+    <string name="title_friendsquare">发表文字</string>
+    <string name="title_friendsquarepic">发表文字</string>
+    <string name="title_send">发送</string>
+    <string name="cancel">取消</string>
+    <string name="title_save">保存</string>
+    <string name="title_personalsettings">个人设置</string>
+    <string name="title_setting">我</string>
+    <string name="title_back">返回</string>
+    <string name="title_exhibitor">参展商</string>
+    <string name="title_details">详细资料</string>
+    <string name="title_addfriend">添加好友</string>
+    <string name="title_share">分享 </string>
+    <string name="title_contacts">通讯录</string>
+    <string name="title_businesscard">选择朋友</string>
+    <string name="title_newfriends">新的好友</string>
+    <string name="title_clear">清空</string>
+    <string name="search">搜索</string>
+    <string name="photos">个人相册</string>
+    <string name="sendmsg">发消息</string>
+    <string name="marketing_account">公众账号</string>
+    <string name="title_square">广场</string>
+
+    <!-- 圈子 -->
+    <string name="square_search_friend"> 搜好友</string>
+    <string name="square_scan"> 扫一扫</string>
+    <string name="square_search_public_account"> 搜公众账号</string>
+    <string name="square_search_contact"> 从通讯录添加</string>
+    <string name="square_number_search_explain1">邮箱帐号</string>
+    <string name="search_friend_title">添加好友</string>
+    <string name="search_number_title">搜号码</string>
+    <string name="square_number_search_explain2">/手机号/营销活动帐号</string>
+    <string name="square_number_find_btn">查找</string>
+    <string name="square_number_find_explain">请输入要查找的号码</string>
+    <string name="chat_list_msg_explain">消息不能为空，请先输入</string>
+
+    <!-- 通讯录 -->
+    <string name="delete">删除</string>
+    <string name="join_the_blacklist">加入黑名单</string>
+    <string name="remark_name">备注名</string>
+    <string name="send_business_card">发送该名片</string>
+    <string name="contacts_searchnum_tips">邮箱帐号/手机号</string>
+    <string name="cancel_focus">取消关注</string>
+    <string name="add_focus">加关注</string>
+    <string name="public_account">公众账号</string>
+    <string name="business_contacts">企业通讯录</string>
+    <string name="new_friends">新朋友</string>
+    <string name="contacts_groupChat">群聊</string>
+    <string name="settings_suggest_introduction">请输入您的反馈建议，我们会尽快关注并修复！</string>
+    <string name="network_unavailable">网络连接不可用</string>
+    <string name="view_details">查看详情</string>
+    <string name="no_phone_number">暂无手机号</string>
+    <string name="qrcode_type">二维码类型为</string>
+    <string name="crash_error_report_toast_text">程序发生错误，请重新进入程序!</string>
+
+    <!-- 地图错误信息 -->
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试！</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+</resources>

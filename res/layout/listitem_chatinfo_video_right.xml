@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="top|right"
+              android:orientation="horizontal"
+              android:paddingTop="10dp"
+              tools:ignore="UseCompoundDrawables">
+
+    <TextView
+            android:id="@+id/chatinfo_video_right_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/msg_state_fail_resend_pressed"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:id="@+id/chatinfo_video_right_layout"
+            android:background="@drawable/bg_message_active_body_right_selected"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@drawable/ic_video"
+                android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/chatinfo_video_right_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon"
+            tools:ignore="ContentDescription"/>
+
+</LinearLayout>

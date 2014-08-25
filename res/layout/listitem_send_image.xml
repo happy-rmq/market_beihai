@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="top|right"
+              android:orientation="horizontal"
+              android:paddingTop="10dp">
+
+    <TextView
+            android:id="@+id/send_image_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/msg_state_fail_resend_pressed"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/send_image_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_message_active_body_right_selected"
+            android:gravity="center_vertical"
+            android:maxWidth="220dp"
+            android:src="@drawable/moren"
+            tools:ignore="ContentDescription"/>
+
+    <ImageView
+            android:id="@+id/send_image_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon"
+            tools:ignore="ContentDescription"/>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+            android:id="@+id/webview_titlebar"
+            layout="@layout/titlebar"/>
+
+    <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:padding="10dp"/>
+
+    <RelativeLayout
+            android:id="@+id/webview_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/webviewtab_bg">
+
+        <Button
+                android:id="@+id/webview_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/webviewtab_up"/>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/webview_switch"
+                android:background="@color/hui50"/>
+
+        <Button
+                android:id="@+id/webview_goforward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/webview_home"
+                android:background="@drawable/webviewtab_back_disable"/>
+
+        <Button
+                android:id="@+id/webview_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/webview_home"
+                android:background="@drawable/webviewtab_forward_disable"/>
+
+        <Button
+                android:id="@+id/webview_reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/webviewtab_refresh_normal"/>
+
+        <Button
+                android:id="@+id/webview_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/webview_goback"
+                android:layout_alignBottom="@+id/webview_goback"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shake_report_dragger"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingRight="5dp"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp">
+
+    <Button
+            android:id="@+id/chatcontrols_select_bt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/type_select_btn"/>
+
+    <EditText
+            android:id="@+id/chatcontrols_inputbox_et"
+            style="@style/active_send_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:maxHeight="80dp"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_active_send"
+            android:maxLines="4"
+            android:paddingLeft="5dp"
+            android:paddingRight="13dp"/>
+
+    <Button
+            android:id="@+id/chatcontrols_send_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:maxHeight="80dp"
+            android:minWidth="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/sl_voice_rcd_btn"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/send"
+            android:textSize="14sp"/>
+
+</LinearLayout>

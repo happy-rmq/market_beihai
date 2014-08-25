@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hui"
+                android:gravity="center_horizontal">
+
+    <include
+            android:id="@+id/public_chat_title"
+            layout="@layout/titlebar"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/active_message_input"
+            android:layout_below="@+id/public_chat_title">
+
+        <com.lenovo.market.view.PullDownView
+                android:id="@+id/public_chat_pull_down"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="true"
+                android:scrollbarStyle="insideInset"
+                android:scrollingCache="false">
+        </com.lenovo.market.view.PullDownView>
+
+        <RelativeLayout
+                android:id="@+id/public_chat_layout_voice"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:background="@drawable/voice_rcd_hint_bg"
+                android:visibility="gone">
+
+            <ImageView
+                    android:id="@+id/public_chat_imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/voice_rcd_hint"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:id="@+id/public_chat_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/public_chat_imageView"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+            android:id="@+id/public_chat_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/active_message_menu"
+            android:layout_below="@+id/public_chat_title"
+            android:background="@drawable/transparent"
+            android:focusable="true"
+            android:gravity="bottom"
+            android:visibility="gone">
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/emotionstore_emo_bg"
+                android:src="@drawable/chatting_setmode_keyboard_btn_normal"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription"/>
+
+        <ListView
+                android:id="@+id/lv_menu_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="200"
+                android:background="@drawable/supplieses_type_bg"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@android:color/transparent"
+                android:paddingBottom="28dp"/>
+
+        <ListView
+                android:id="@+id/lv_menu_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="200"
+                android:background="@drawable/supplieses_type_bg"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@android:color/transparent"
+                android:paddingBottom="28dp"/>
+
+        <ListView
+                android:id="@+id/lv_menu_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="200"
+                android:background="@drawable/supplieses_type_bg"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@android:color/transparent"
+                android:paddingBottom="28dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/active_message_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1.5dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/emotionstore_emo_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="1dp">
+
+            <ImageButton
+                    android:id="@+id/active_message_switch_input"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emotionstore_emo_bg"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/chatting_setmode_heart_btn_normal"
+                    tools:ignore="ContentDescription"/>
+
+            <Button
+                    android:id="@+id/active_message_keyboard"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/sl_btn_chatting_setmode_keyboard"
+                    android:focusable="false"
+                    android:visibility="gone"/>
+
+            <Button
+                    android:id="@+id/active_message_voice"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/sl_btn_chatting_setmode_voice"
+                    android:focusable="false"/>
+
+            <com.lenovo.market.view.CustomChatControls
+                    android:id="@+id/active_message_chatcontrols"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/active_message_speek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/sl_voice_rcd_btn"
+                    android:maxHeight="80dp"
+                    android:minHeight="40.5dp"
+                    android:text="按住 说话"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/active_message_bottom_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.lenovo.market.view.CustomViewPage
+                    android:id="@+id/active_message_bottom_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/active_message_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1.5dp"
+            android:background="@drawable/emotionstore_emo_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:visibility="invisible">
+
+        <ImageButton
+                android:id="@+id/active_message_switch_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:background="@drawable/emotionstore_emo_bg"
+                android:paddingRight="2dp"
+                android:src="@drawable/chatting_setmode_keyboard_btn_normal"
+                tools:ignore="ContentDescription"/>
+
+        <Button
+                android:id="@+id/bt_menu_one"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="200"
+                android:background="@drawable/emotionstore_emo_bg"
+                android:textColor="@color/black90"/>
+
+        <Button
+                android:id="@+id/bt_menu_two"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="200"
+                android:background="@drawable/emotionstore_emo_bg"
+                android:textColor="@color/black90"/>
+
+        <Button
+                android:id="@+id/bt_menu_three"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="200"
+                android:background="@drawable/emotionstore_emo_bg"
+                android:textColor="@color/black90"/>
+    </LinearLayout>
+
+</RelativeLayout>

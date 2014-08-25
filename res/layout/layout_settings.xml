@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/hui"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+            <RelativeLayout
+                    android:id="@+id/friend_circle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/preference_single_item"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/settings_exit_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_friend_circle"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_exit_icon"
+                        android:text="@string/circle_Friends"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/settings_arrow"/>
+            </RelativeLayout>
+
+            <!-- 第一块：个人信息 -->
+
+            <RelativeLayout
+                    android:id="@+id/settings_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/preference_single_item"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/settings_info_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_info"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/settings_info_icon"
+                        android:text="@string/settings_info_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/settings_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/settings_qr_code_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/preference_single_item"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/settings_qr_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_qrcode"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/settings_qr_code"
+                        android:text="@string/settings_qr_code_card"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/settings_arrow"/>
+            </RelativeLayout>
+
+            <!-- 第二块：积分管理和主题 -->
+
+            <RelativeLayout
+                    android:id="@+id/settings_manage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/preference_first_item"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/settings_manage_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_manage"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/settings_manage_icon"
+                        android:text="@string/settings_manage_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/settings_theme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/preference_last_item"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/settings_theme_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_theme"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_theme_icon"
+                        android:text="@string/settings_theme_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+            </RelativeLayout>
+
+            <!-- 第三块：系统升级，新功能介绍，反馈建议 -->
+
+            <RelativeLayout
+                    android:id="@+id/settings_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/preference_single_item"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/settings_update_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_update"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_update_icon"
+                        android:text="@string/settings_update_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/settings_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/settings_update_home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/preference_single_item"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/settings_update_home_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_theme"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_update_home_icon"
+                        android:text="@string/settings_update_home"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/settings_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/settings_introduce"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/preference_item"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/settings_introduce_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_introduce"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_introduce_icon"
+                        android:text="@string/settings_introduce_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/settings_suggest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/preference_single_item"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/settings_suggest_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_suggest"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_suggest_icon"
+                        android:text="@string/settings_suggest_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/settings_arrow"/>
+            </RelativeLayout>
+
+            <!-- 第四块：关于和退出 -->
+
+            <RelativeLayout
+                    android:id="@+id/settings_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/preference_first_item"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/settings_about_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_about"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_about_icon"
+                        android:text="@string/settings_about_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/settings_exit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/preference_single_item"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/settings_exit_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_settings_exit"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/settings_exit_icon"
+                        android:text="@string/settings_exit_text"
+                        android:textColor="#000"
+                        android:textSize="@dimen/settings_menu_textsize"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/settings_arrow"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

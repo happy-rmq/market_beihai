@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/circle_friends_bg"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              tools:ignore="DisableBaselineAlignment">
+
+    <ImageView
+            android:id="@+id/iv_groupshare_headportrait"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon"
+            tools:ignore="ContentDescription"/>
+
+    <TextView
+            android:id="@+id/tv_groupshare_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+</LinearLayout>

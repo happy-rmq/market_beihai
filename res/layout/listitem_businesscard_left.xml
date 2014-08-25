@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingRight="10dp"
+              android:paddingTop="10dp"
+              tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+            android:id="@+id/businesscard_left_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon"
+            tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+            android:id="@+id/businesscard_left_layout"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="名片"
+                android:textColor="@color/black"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+            <ImageView
+                    android:id="@+id/businesscard_left_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:id="@+id/businesscard_left_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/businesscard_left_img"
+                    android:singleLine="true"
+                    android:text="aa"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/businesscard_left_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/businesscard_left_name"
+                    android:layout_below="@+id/businesscard_left_name"
+                    android:singleLine="true"
+                    android:text="bb"
+                    android:textColor="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

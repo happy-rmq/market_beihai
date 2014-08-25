@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/circle_friends_bg"
+              android:orientation="horizontal"
+              android:paddingTop="4dp"
+              android:paddingBottom="6dp"
+              tools:ignore="DisableBaselineAlignment">
+
+    <RelativeLayout
+            android:id="@+id/menu_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/friend_user_avatar"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_margin="3dp"
+                android:src="@drawable/icon"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:id="@+id/msg_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/friend_user_avatar"
+                android:layout_alignTop="@+id/friend_user_avatar"
+                android:background="@drawable/one_figure"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12dip"
+                tools:ignore="SpUsage"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.83"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+            <TextView
+                    android:id="@+id/friend_user_nick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:singleLine="true"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/friend_user_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0"
+                    android:textColor="#333333"
+                    android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/friend_user_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

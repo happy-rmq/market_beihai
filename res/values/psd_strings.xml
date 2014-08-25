@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="register_account">用户名称</string>
+    <string name="register_pwd">登录密码</string>
+    <string name="register_repeatpwd">重复密码</string>
+    <string name="register_name">用户姓名</string>
+    <string name="register_idcard">身份证号</string>
+    <string name="register_phone">手机号码</string>
+    <string name="register_accounthint">请输入用户名</string>
+    <string name="register_pwdhint">请输入您的密码</string>
+    <string name="register_repeatpwdhint">请再次输入密码</string>
+    <string name="register_namehint">请输入您的真实姓名</string>
+    <string name="register_idcardhint">请输入您的身份证号</string>
+    <string name="register_phonehint">请输入正确的手机号</string>
+
+    <string name="updatepwd_historypwd">原始密码</string>
+    <string name="updatepwd_newpwd">最新密码</string>
+    <string name="updatepwd_repeatnewpwd">重复输入</string>
+    <string name="updatepwd_historypwdhint">请输入您的原始密码</string>
+    <string name="updatepwd_newpwdhint">请输入您的最新密码</string>
+    <string name="updatepwd_repeatnewpwdhint">请再次输入您的最新密码</string>
+
+    <string name="updateaccountmsg_historyphone">原手机号</string>
+    <string name="updateaccountmsg_newphone">新手机号</string>
+    <string name="updateaccountmsg_historyphonehint">18111111111</string>
+
+    <string name="forgetPsd_newPsdHint">请输入新密码</string>
+
+</resources>

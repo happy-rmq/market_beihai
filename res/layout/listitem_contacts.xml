@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tv_catalog"
+            style="@style/contacts_listitem_catalog"
+            android:paddingRight="4.0dip"/>
+
+    <LinearLayout
+            android:id="@+id/contactitem_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_exhibitorselect_item"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp">
+
+        <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/icon"/>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp"
+                android:paddingTop="2dp">
+
+            <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="姓名"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:id="@+id/tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

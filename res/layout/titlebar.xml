@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_titlebar">
+
+    <Button
+            android:id="@+id/btn_left"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_titlebar_left"
+            android:gravity="center"
+            android:paddingLeft="9dp"
+            android:textColor="@color/titlebar_textcolor"
+            android:textSize="@dimen/titlebar_btn_textsize"
+            android:text="@string/title_back"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/titlebar_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/titlebar_textcolor"
+            android:textSize="@dimen/titlebar_textsize"/>
+
+    <Button
+            android:id="@+id/btn_right"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_titlebar_right"
+            android:textColor="@color/titlebar_textcolor"
+            android:textSize="@dimen/titlebar_btn_textsize"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+</RelativeLayout>

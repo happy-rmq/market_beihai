@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <include
+            android:id="@+id/viewpaper_title"
+            layout="@layout/titlebar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewpaper_title"
+            android:layout_above="@+id/viewpaper_bottom_navigation"
+            android:orientation="horizontal">
+
+        <FrameLayout
+                android:id="@+id/vp_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hui">
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/vp_framelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hui">
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/vp_framelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hui">
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/vp_framelayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hui">
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- <Button 
+        android:id="@+id/viewpaper_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/viewpaper_title"
+        android:background="@drawable/homepage_switch"/> -->
+
+    <LinearLayout
+            android:id="@+id/viewpaper_bottom_navigation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/common_bottom"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+                android:id="@+id/viewpaper_event"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/menu_event"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/common_bottomico1new"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dip"
+                    android:text="@string/active_menu_event"
+                    android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/viewpaper_friend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/menu_friend"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/common_bottomico2"/>
+
+            <TextView
+                    android:id="@+id/tab_activity_count"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/one_figure"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dip"
+                    android:text="@string/active_menu_friend"
+                    android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/viewpaper_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/menu_contact"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/common_bottomico3"/>
+
+            <TextView
+                    android:id="@+id/tab_contacts_count"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/one_figure"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/active_menu_contact"
+                    android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/viewpaper_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/menu_setting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/common_bottomico5"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/active_menu_setting"
+                    android:textSize="12dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

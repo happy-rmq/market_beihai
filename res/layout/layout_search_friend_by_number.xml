@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/hui"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <TextView
+                android:id="@+id/search_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/contacts_searchnum_tips"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+                android:id="@+id/search_input_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sl_register_edittext"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+        <ListView
+                android:id="@+id/search_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fadingEdge="vertical"
+                android:cacheColorHint="#00000000"
+                android:scrollbars="none">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

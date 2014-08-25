@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/whilte"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/titleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/psd_topbg">
+
+        <Button
+                android:id="@+id/main_left_bt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:background="@drawable/psd_left_topbg"/>
+
+        <Button
+                android:id="@+id/main_right_bt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/psd_right_topbg"/>
+
+        <TextView
+                android:text="未来网"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/psd_toptitle" />-->
+    </RelativeLayout>
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/psd_titlebg">
+
+                <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_navigation_arrow_down"
+                        android:fadingEdge="none"
+                        android:scrollbars="none">
+
+                    <LinearLayout
+                            android:id="@+id/ll_navigation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                        android:id="@+id/iv_navigation_arrow_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/psd_title_arrowbg"
+                        android:padding="10dp"
+                        android:scaleType="center"
+                        android:src="@drawable/psd_navigation_arrow_down"/>
+            </RelativeLayout>
+
+            <!--
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </android.support.v4.view.ViewPager>-->
+
+
+            <!--
+            <com.lenovo.xjpsd.view.CustomViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </com.lenovo.xjpsd.view.CustomViewPager>
+            -->
+
+            <RelativeLayout
+                    android:id="@+id/main_relativelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/psd_titlebg">
+
+                <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="点击切换栏目"
+                        android:textColor="@color/black"/>
+
+                <ImageView
+                        android:id="@+id/iv_navigation_arrow_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/psd_title_arrowbg"
+                        android:padding="10dp"
+                        android:scaleType="center"
+                        android:src="@drawable/psd_navigation_arrow_up"/>
+            </RelativeLayout>
+
+            <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                <LinearLayout
+                        android:id="@+id/layout2_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
